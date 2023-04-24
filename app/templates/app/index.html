@@ -1,0 +1,16 @@
+{% load static %}
+{% load utils %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UpTrader</title>
+</head>
+<body>
+<br>
+
+{% autoescape off %}
+    {% draw_menu objects_list request.path %}
+{% endautoescape %}
+</body>
+</html>
